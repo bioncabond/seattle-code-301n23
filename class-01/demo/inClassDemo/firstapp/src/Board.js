@@ -1,11 +1,11 @@
 import React from 'react';
-import Square from './square.js';
+import Square from './Square'
 
 class Board extends React.Component {
-  render(){
-    return(
-      <div id="board">
-        <h2>Board</h2>
+  render() {
+    return (
+      <>
+        <h2>This is my Tic-Tac-Toe Board :)</h2>
         <div className="board-row">
           <Square value={1} />
           <Square value={2} />
@@ -21,7 +21,7 @@ class Board extends React.Component {
           <Square value={8} />
           <Square value={9} />
         </div>
-      </div>
+      </>
     )
   }
 }
