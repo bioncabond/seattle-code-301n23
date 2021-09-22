@@ -1,0 +1,8 @@
+.equip img{
+  width: 200px
+}
+
+.equip {
+  border: 2px solid blue;
+  width:max-content;
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Backpack",
+    "image": "https://images.unsplash.com/photo-1499803270242-467f7311582d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFja3BhY2t8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "description": "Wear on your back an put stuff in (picutre by S&B Vonlanthen)"
+  },
+  {
+    "title": "Tent",
+    "image": "https://images.unsplash.com/photo-1607908560428-36ff9e0363b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dGVudHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "description": "Need to sleep with a little protection (Photo by Raygar He)"
+  },
+  {
+    "title": "Wood",
+    "image": "https://images.unsplash.com/photo-1584205831932-4f8618ce66c1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fGZpcmV3b29kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "description": "Must have something to cook smores on! (Photo by: Renzo D'souza"
+  }
+]
