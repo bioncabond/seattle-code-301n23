@@ -17,10 +17,12 @@ class Equipment extends React.Component {
   onAdd = () => {
     //how you set state
     this.setState({ numberInv: this.state.numberInv + 1 });
+    this.props.updateTotalWeight(this.props.weight)
   }
   onRemove = () => {
     if (this.state.numberInv > 0) {
       this.setState({ numberInv: this.state.numberInv - 1 });
+      this.props.updateTotalWeight(-1 * this.props.weight);
     }
   }
   setFav = () => {
@@ -31,24 +33,16 @@ class Equipment extends React.Component {
       this.setState({ isFav: true })
     }
   }
-
-
-
-
   render() {
     return (
-
-
-
-
-
       <div className="m-2">
-        <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src={this.props.image} />
+        <Card style={{ width: '20rem' }}>
+          <Card.Img style={{ height: '300px' }} variant="top" src={this.props.image} />
           <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>
-              {this.props.description}
+              <p><strong>Weight:</strong> {this.props.weight} lbs</p>
+              <p onClick={this.props.toggleModal}>{this.props.description}</p>
             </Card.Text>
             <p onClick={this.setFav}>Amount in Inventory: {this.state.numberInv}</p>
             {/* Ternary statement is a if/else rolled into one.  evaluation ? true : false  */}
