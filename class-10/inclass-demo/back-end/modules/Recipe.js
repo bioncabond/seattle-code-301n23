@@ -11,6 +11,10 @@ async function getRecipies(req, res) {
   if (cache[q] &&
     Date.now() - cache[q].timestamp < 1000 * 60 * 2) {
     //1sec  1 minute 2 minutes 
+
+    //ERROR: 
+    //res.status(200).send(cache[q].recipe);
+    //should have been sent out:
     res.status(200).send(cache[q].recipe);
     console.log(cache, 'Cache HIT!');
   }
