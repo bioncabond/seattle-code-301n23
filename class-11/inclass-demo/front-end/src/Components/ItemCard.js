@@ -1,18 +1,18 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup'
 class ItemCard extends React.Component {
   render() {
     return (
       <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={this.props.item.image_url} />
         <Card.Body>
-          <Card.Title>{this.props.item.title}</Card.Title>
+          <Card.Title>{this.props.item.name}</Card.Title>
           <Card.Text>
-            <ul>
-              {this.props.item.arr &&
-                this.props.item.arr.map((ing, idx) => <li key={idx}>{ing.text}</li>)
-              }
-            </ul>
+            <ListGroup>
+              <ListGroup.Item>Description: {this.props.item.description}</ListGroup.Item>
+              <ListGroup.Item>Quantity: {this.props.item.qty}</ListGroup.Item>
+              <ListGroup.Item>Status: {this.props.item.status}</ListGroup.Item>
+            </ListGroup>
           </Card.Text>
         </Card.Body>
       </Card>
