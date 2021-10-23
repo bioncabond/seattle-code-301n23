@@ -7,13 +7,11 @@ class ItemCard extends React.Component {
       <Card style={{ width: '18rem' }}>
         <Card.Body>
           <Card.Title>{this.props.item.name}</Card.Title>
-          <Card.Text>
-            <ListGroup>
-              <ListGroup.Item>Description: {this.props.item.description}</ListGroup.Item>
-              <ListGroup.Item>Quantity: {this.props.item.qty}</ListGroup.Item>
-              <ListGroup.Item>Status: {this.props.item.status}</ListGroup.Item>
-            </ListGroup>
-          </Card.Text>
+          <ListGroup>
+            <ListGroup.Item>Description: {this.props.item.description}</ListGroup.Item>
+            <ListGroup.Item>Quantity: {this.props.item.qty}</ListGroup.Item>
+            <ListGroup.Item>Status: {this.props.item.status}</ListGroup.Item>
+          </ListGroup>
         </Card.Body>
       </Card>
     )
