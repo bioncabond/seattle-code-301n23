@@ -4,10 +4,10 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import Button from 'react-bootstrap/Button';
 class ItemCard extends React.Component {
 
+  runHandleDelete = () => {
+    this.props.handleDelete(this.props.item._id);
+  }
   render() {
-    runHandleDelete = () => {
-      this.props.handleDelete(this.props.item._id);
-    }
     return (
       <Card style={{ width: '18rem' }}>
         <Card.Body>
